@@ -26,8 +26,6 @@ set(TEST_FILES
 tests/test_main.cpp # this is the main for tests
 tests/input_test.cpp
 tests/bloomfilter_test.cpp # this file contain tests for bloomfilter class functions.
-
-
 )
 
 # Create the main library that you want to test
