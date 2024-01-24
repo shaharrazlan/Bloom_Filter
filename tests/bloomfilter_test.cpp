@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include  "../src/bloomfilter.cpp"
+#include  "../src/BloomFilter.cpp"
 
 // Include the BloomFilter class definition here
 
