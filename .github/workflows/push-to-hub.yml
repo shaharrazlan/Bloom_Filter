@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-      - name: Set image tag based on commit hash
+      - name: Set image tag based on release version
         id: meta
-        run: echo "tags=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+        run: echo "tags=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
       - name: Log in to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Build and tag Docker image
