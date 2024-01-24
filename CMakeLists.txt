@@ -16,10 +16,10 @@ set(FETCHCONTENT_DOWNLOAD_EXTRACT_TIMESTAMP 1)
 
 enable_testing()
 set(SOURCE_FILES
-src/input_output.cpp
+src/InputOutput.cpp
 src/InputValidation.cpp
-src/bloomfilter.cpp
-src/application.cpp
+src/BloomFilter.cpp
+src/Application.cpp
 src/UrlManager.cpp
 )
 set(TEST_FILES
