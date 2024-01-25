@@ -1,7 +1,5 @@
 #include "BloomFilter.h"
 
-
-
 // Constructor definition
 BloomFilter::BloomFilter(){}
 
@@ -11,8 +9,13 @@ void BloomFilter::setBits(int sizeOfBits) {
    this->bitArray.resize(sizeOfBits, false);
 }
 
-void BloomFilter::setNumHashFunctions(std::vector<int> num_hashFunctions) {
-    this->num_hashFunctions = num_hashFunctions;
+void BloomFilter::setNumHashFunctions(std::vector<std::string> num_hashFunctions) {
+    std::vector<int> intVec;
+    for (int i = 1; i < num_hashFunctions.size(); ++i) {
+        intVec.push_back(std::stoi(num_hashFunctions[i]));
+    }
+
+    this->num_hashFunctions = intVec;
 }
 
 // Function to add an element to the Bloom filter
@@ -47,5 +50,10 @@ bool BloomFilter::containsElement(std::string element) {
 }
 
 bool BloomFilter::areParametersSet() {
-    return !bitArray.empty() && !num_hashFunctions.empty();
+    return !num_hashFunctions.empty();
+}
+
+void BloomFilter::setParams(std::vector<std::string> input) {
+    setBits(std::stoi(input[0]));
+    setNumHashFunctions(input);
 }
