@@ -10,17 +10,8 @@
 
 class InputOutput {
 private:
-<<<<<<< Updated upstream
-    std::vector<std::string> data; 
 
-public:
-    std::vector<std::string> getStringElements(std::string inputLine);
-    int getInput();
-    std::vector<std::string> getData();
-    void displayOutput(bool isPresent);
-    std::vector<int> getIntData();
-=======
-    std::vector<std::string> data;
+    std::vector<std::string> data; 
     InputValidation* iv = new InputValidation();
 
 public:
@@ -34,6 +25,6 @@ public:
     std::vector<std::string> getStringElements(std::string inputLine);
     std::vector<std::string> getData();
   
->>>>>>> Stashed changes
+
 };
 #endif // INPUT_OUTPUT_H
