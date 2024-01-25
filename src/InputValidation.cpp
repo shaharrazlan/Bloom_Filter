@@ -1,9 +1,5 @@
 #include "InputValidation.h"
 
-<<<<<<< Updated upstream
-InputValidation::InputValidation(){};
-=======
->>>>>>> Stashed changes
 
 
 bool InputValidation::isANumber(std::vector<std::string> inputVector) {
@@ -45,19 +41,6 @@ bool InputValidation::isValidInputNumbers(std::vector<std::string> inputVector) 
     
     std::vector<int> intVector = convertToInts(inputVector);
     
-<<<<<<< Updated upstream
-    // Check if the first number is greater than 16
-    if (intVector[0] < 8) {
-        return false;
-    }
-
-    for(int i = 1; i < intVector.size(); i++) {
-        if(intVector[i] != 1 && intVector[i] != 2) {
-            return false;
-        }
-    }
-=======
->>>>>>> Stashed changes
 
     // If all conditions pass, the input is valid
     return true;
@@ -73,15 +56,3 @@ bool InputValidation::isValidNumberAndUrl(std::vector<std::string> inputVector) 
     }
     return true;
 }
-<<<<<<< Updated upstream
-
-
-/*bool InputValidation::isValidUrl(std::string input) {
-    
-    std::regex urlRegex(R"(^www\.[a-zA-Z0-9]+\.com[a-zA-Z0-9]*$)");
-    // Use std::regex_match to check if the input matches the regular expression;
-    return std::regex_match(input, urlRegex);
-}
-*/
-=======
->>>>>>> Stashed changes
