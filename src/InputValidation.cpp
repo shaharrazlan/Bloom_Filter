@@ -1,6 +1,9 @@
 #include "InputValidation.h"
 
+<<<<<<< Updated upstream
 InputValidation::InputValidation(){};
+=======
+>>>>>>> Stashed changes
 
 
 bool InputValidation::isANumber(std::vector<std::string> inputVector) {
@@ -42,6 +45,7 @@ bool InputValidation::isValidInputNumbers(std::vector<std::string> inputVector) 
     
     std::vector<int> intVector = convertToInts(inputVector);
     
+<<<<<<< Updated upstream
     // Check if the first number is greater than 16
     if (intVector[0] < 8) {
         return false;
@@ -52,6 +56,8 @@ bool InputValidation::isValidInputNumbers(std::vector<std::string> inputVector) 
             return false;
         }
     }
+=======
+>>>>>>> Stashed changes
 
     // If all conditions pass, the input is valid
     return true;
@@ -67,6 +73,7 @@ bool InputValidation::isValidNumberAndUrl(std::vector<std::string> inputVector) 
     }
     return true;
 }
+<<<<<<< Updated upstream
 
 
 /*bool InputValidation::isValidUrl(std::string input) {
@@ -76,3 +83,5 @@ bool InputValidation::isValidNumberAndUrl(std::vector<std::string> inputVector) 
     return std::regex_match(input, urlRegex);
 }
 */
+=======
+>>>>>>> Stashed changes

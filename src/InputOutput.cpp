@@ -1,15 +1,29 @@
 #include "InputOutput.h"
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 std::vector<std::string> InputOutput::getStringElements(std::string inputLine) {
     std::vector<std::string> result;
     std::istringstream iss(inputLine);
     std::string token;
 
     while (iss >> token) {
+<<<<<<< Updated upstream
         // Remove spaces from the token
         token.erase(std::remove(token.begin(), token.end(), ' '), token.end());
         result.push_back(token);
+=======
+        // Remove spaces from the token without using std::remove
+        std::string cleanedToken;
+        for (char c : token) {
+            if (!std::isspace(c)) {
+                cleanedToken += c;
+            }
+        }
+        result.push_back(cleanedToken);
+>>>>>>> Stashed changes
     }
 
     return result;
@@ -17,12 +31,18 @@ std::vector<std::string> InputOutput::getStringElements(std::string inputLine) {
 
 
 
+<<<<<<< Updated upstream
 int InputOutput::getInput() {
+=======
+
+std::string InputOutput::getAction(bool b) {
+>>>>>>> Stashed changes
     std::string userInput;
     std::cin.clear();
     std::getline(std::cin, userInput);
     std::vector<std::string> inputVec = getStringElements(userInput);
     this->data = inputVec;
+<<<<<<< Updated upstream
     InputValidation validInput;
     
     if (validInput.isANumber(inputVec)) {
@@ -37,6 +57,23 @@ int InputOutput::getInput() {
        return 0;
     }
 }
+=======
+   
+    if(b) {
+        if (iv->isValidNumberAndUrl(inputVec)) {
+                return inputVec[0];
+            }
+        }
+    else if(iv->isValidInputNumbers(inputVec)) {
+        return "3";
+    }
+}
+     
+
+
+
+
+>>>>>>> Stashed changes
 
 std::vector<std::string> InputOutput::getData()
 {
@@ -55,6 +92,7 @@ std::vector<int> InputOutput::getIntData()
  
 
 
+<<<<<<< Updated upstream
 void InputOutput::displayOutput(bool isPresent) {
     if (isPresent) {
         std::cout << "Element is present in the Bloom Filter." << std::endl;
@@ -63,3 +101,5 @@ void InputOutput::displayOutput(bool isPresent) {
     }
 }
 
+=======
+>>>>>>> Stashed changes
