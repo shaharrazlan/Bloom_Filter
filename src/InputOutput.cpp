@@ -1,24 +1,19 @@
 #include "InputOutput.h"
 
+
 std::vector<std::string> InputOutput::getStringElements(std::string inputLine) {
     std::vector<std::string> result;
     std::istringstream iss(inputLine);
     std::string token;
 
     while (iss >> token) {
-        // Remove spaces from the token without using std::remove
-        std::string cleanedToken;
-        for (char c : token) {
-            if (!std::isspace(c)) {
-                cleanedToken += c;
-            }
-        }
-        result.push_back(cleanedToken);
+        // Remove spaces from the token
+        token.erase(std::remove(token.begin(), token.end(), ' '), token.end());
+        result.push_back(token);
     }
 
     return result;
 }
-
 
 
 
@@ -38,18 +33,3 @@ std::string InputOutput::getAction(bool b) {
         return "3";
     }
 }
-     
-
-
-
-
-
-std::vector<std::string> InputOutput::getData()
-{
-    return this->data;
-}
-
-    
- 
-
-
