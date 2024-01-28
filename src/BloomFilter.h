@@ -6,6 +6,7 @@
 #include <set>
 #include <functional>
 #include <sstream>
+#include <limits>
 
 
 
@@ -14,7 +15,7 @@ private:
     std::vector<bool> bitArray;
     std::vector<int> num_hashFunctions;// Added a semicolon here
 
-    void setBits(int sizeOfBits);
+    void setBits(std::string sizeOfBits);
     void setNumHashFunctions(std::vector<std::string> num_hashFunctions);
    
 public:
