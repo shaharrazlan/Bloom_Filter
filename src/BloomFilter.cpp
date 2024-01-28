@@ -10,11 +10,16 @@ void BloomFilter::setBits(int sizeOfBits) {
 }
 
 void BloomFilter::setNumHashFunctions(std::vector<std::string> num_hashFunctions) {
-    std::vector<int> intVec;
-    for (int i = 1; i < num_hashFunctions.size(); ++i) {
-        intVec.push_back(std::stoi(num_hashFunctions[i]));
+    std::set<int> intSet;
+    for (int i = 0; i < num_hashFunctions.size(); ++i) {
+        intSet.insert(std::stoi(num_hashFunctions[i]));
     }
-
+     
+    std::vector<int> intVec; 
+    for (auto it = intSet.begin(); it != intSet.end(); ++it) {
+        intVec.push_back(*it);
+    }
+   
     this->num_hashFunctions = intVec;
 }
 
