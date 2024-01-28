@@ -5,7 +5,7 @@
 
 TEST(BloomFilterTest, AddAndContainsElement) {
     // Define the size of the Bloom filter and the hash functions
-    int sizeOfBits = 128;
+    int sizeOfBits = 800000000000000000000000000000;
 
     std::vector<std::string> input;
 

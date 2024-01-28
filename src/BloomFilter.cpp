@@ -6,6 +6,12 @@ BloomFilter::BloomFilter(){}
 
 void BloomFilter::setBits(int sizeOfBits) {
    bitArray.clear();
+   if(sizeOfBits < 16) {
+     sizeOfBits = 16;
+   }
+   if(sizeOfBits > 4000) {
+    sizeOfBits = 2000;
+   }
    this->bitArray.resize(sizeOfBits, false);
 }
 
