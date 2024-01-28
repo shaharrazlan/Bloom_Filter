@@ -1,6 +1,16 @@
 #include "InputValidation.h"
 
 
+bool isNumeric(const std::string& str) {
+    for (char c : str) {
+        if (!std::isdigit(c)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
 
 bool InputValidation::isANumber(std::vector<std::string> inputVector) {
     for (const std::string str : inputVector) {
@@ -15,23 +25,19 @@ bool InputValidation::isANumber(std::vector<std::string> inputVector) {
 
 bool InputValidation::convertToInts(std::vector<std::string> inputVector) {
     int n;
-    try {
-        std::stoi(inputVector[0]);
-        for (int i = 1; i < inputVector.size(); i++) {
-            n = std::stoi(inputVector[i]);
-            if(n > 2) {
-                return false;
-            }    
-        }
+    if (!isNumeric(inputVector[0])) {
+        return false;
     }
-         catch (const std::invalid_argument& e) {
-           return false;
-        } catch (const std::out_of_range& e) {
-            return false;
-            // Handle the error or skip this element if necessary
-        }
+    for (int i = 1; i < inputVector.size(); i++) {
+         n = std::stoi(inputVector[i]);
+        if(n > 2) {
+             return false;
+         }    
+    }
+    
     return true;
-}
+ }
+
 
 
 
