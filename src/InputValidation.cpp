@@ -13,23 +13,27 @@ bool InputValidation::isANumber(std::vector<std::string> inputVector) {
     return true;
 }
 
-std::vector<int> InputValidation::convertToInts(std::vector<std::string> inputVector) {
-    std::vector<int> result;
-
-    for (std::string str : inputVector) {
-        try {
-            result.push_back(std::stoi(str));
-        } catch (const std::invalid_argument& e) {
-            std::cerr << "Error converting string to double: " << e.what() << std::endl;
-            // Handle the error or skip this element if necessary
-        } catch (const std::out_of_range& e) {
-            std::cerr << "Error converting string to double: " << e.what() << std::endl;
-            // Handle the error or skip this element if necessary
+bool InputValidation::convertToInts(std::vector<std::string> inputVector) {
+    int n;
+    try {
+        std::stoi(inputVector[0]);
+        for (int i = 1; i < inputVector.size(); i++) {
+            n = std::stoi(inputVector[i]);
+            if(n > 2) {
+                return false;
+            }    
         }
     }
-
-    return result;
+         catch (const std::invalid_argument& e) {
+           return false;
+        } catch (const std::out_of_range& e) {
+            return false;
+            // Handle the error or skip this element if necessary
+        }
+    return true;
 }
+
+
 
 
 bool InputValidation::isValidInputNumbers(std::vector<std::string> inputVector) {
@@ -39,7 +43,10 @@ bool InputValidation::isValidInputNumbers(std::vector<std::string> inputVector) 
         return false;
     }
     
-    std::vector<int> intVector = convertToInts(inputVector);
+    if(!convertToInts(inputVector)){
+        return false;
+
+    };
     
 
     // If all conditions pass, the input is valid
