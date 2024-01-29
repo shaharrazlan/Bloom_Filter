@@ -1,6 +1,6 @@
 #include "Application.h"
 #include "BloomFilter.h"
-#include "ICommands.h"
+#include "ICommand.h"
 #include "AddUrl.h"
 #include "CheckUrl.h"
 #include "SetHashParam.h"
