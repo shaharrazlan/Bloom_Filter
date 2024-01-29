@@ -5,28 +5,30 @@
 
 TEST(BloomFilterTest, AddAndContainsElement) {
     // Define the size of the Bloom filter and the hash functions
-    int sizeOfBits = 128;
+    std::string sizeOfBits = "80000000000000000000000000000000000000000000000000000000";
+
+    std::vector<std::string> input;
 
     // Define hash functions and their corresponding number of functions
-
-    std::vector<int> num_hashFunctions;
+    input.push_back(sizeOfBits);
+    input.push_back("1");
+    input.push_back("2");
+ 
 
 
     // Insert your hash functions into the vectors
    
-    num_hashFunctions.push_back(1);
 
- 
-    num_hashFunctions.push_back(2);
 
     // Create a BloomFilter object
     BloomFilter bloomFilter;
-    bloomFilter.setBits(sizeOfBits);
-    bloomFilter.setNumHashFunctions(num_hashFunctions);
-    
+    bloomFilter.setParams(input);
    
+    EXPECT_EQ(bloomFilter.getsize(), 3000);
+
     // Add an element to the filter
     bloomFilter.addElement("www.example.com0");
+    
 
     // Check for the presence of the added element
     EXPECT_TRUE(bloomFilter.containsElement("www.example.com0"));
