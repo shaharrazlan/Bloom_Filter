@@ -45,6 +45,9 @@ bool InputValidation::convertToInts(std::vector<std::string> inputVector) {
 bool InputValidation::isValidInputNumbers(std::vector<std::string> inputVector) {
    
      // Check if the input is valid according to your criteria
+    if (inputVector[0] == "0") {
+        return false;
+    }
     if (inputVector.size() < 2) {
         return false;
     }
