@@ -10,12 +10,13 @@ TEST(ICommandTest, AddAndContainsUrl) {
 
     // Define hash functions and their corresponding number of functions
 
-    std::vector<int> num_hashFunctions;
     std::vector<std::string> input;
+    std::vector<std::string> setinput;
 
-    num_hashFunctions.push_back(1);
+    
     input.push_back("www.example");
-
+     
+    setinput.push_back("8 1");
     // Create a BloomFilter object
     BloomFilter* bf = new BloomFilter();
  
@@ -24,7 +25,7 @@ TEST(ICommandTest, AddAndContainsUrl) {
     AddUrl* au = new AddUrl();
     SetHashParam* shp = new SetHashParam();
 
-    shp->execute("8 1");
+    shp->execute(setinput, bf);
 
     testing::internal::CaptureStdout();
 
