@@ -15,10 +15,11 @@ private:
     std::vector<bool> bitArray;
     std::vector<int> num_hashFunctions;// Added a semicolon here
 
-    void setBits(std::string sizeOfBits);
+    void setBits(std::string& sizeOfBits);
     void setNumHashFunctions(std::vector<std::string> num_hashFunctions);
    
 public:
+    int getsize();
     BloomFilter();
     void setParams(std::vector<std::string> input);
     void addElement(std::string element);
