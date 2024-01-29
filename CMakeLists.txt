@@ -24,7 +24,7 @@ src/Application.cpp
 src/CheckUrl.cpp
 src/ICommand.h
 src/SetHashParam.cpp
-src/UrLmanager.cpp
+src/UrlManager.cpp
 src/main.cpp
 )
 set(TEST_FILES
