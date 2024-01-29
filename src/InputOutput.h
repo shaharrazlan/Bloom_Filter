@@ -10,13 +10,21 @@
 
 class InputOutput {
 private:
+
     std::vector<std::string> data; 
+    InputValidation* iv = new InputValidation();
 
 public:
+
+    InputOutput(){};
+    ~InputOutput(){
+        delete iv;
+    };
+
+    std::string getAction(bool b); 
     std::vector<std::string> getStringElements(std::string inputLine);
-    int getInput();
     std::vector<std::string> getData();
-    void displayOutput(bool isPresent);
-    std::vector<int> getIntData();
+  
+
 };
 #endif // INPUT_OUTPUT_H

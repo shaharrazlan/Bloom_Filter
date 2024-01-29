@@ -10,12 +10,12 @@
 class InputValidation {
 
 public:
-    InputValidation();
+  
     bool isANumber(std::vector<std::string> inputVector);
     bool isValidInputNumbers(std::vector<std::string> inputVector);
-    std::vector<int> convertToInts(std::vector<std::string> inputVector);
+    bool convertToInts(std::vector<std::string> inputVector);
     bool isValidNumberAndUrl(std::vector<std::string> inputVector);
-    /*bool isValidUrl(std::string input);*/
+ 
 
 };
 
