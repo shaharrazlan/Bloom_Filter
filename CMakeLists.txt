@@ -21,7 +21,7 @@ src/InputValidation.cpp
 src/BloomFilter.cpp
 src/AddUrl.cpp
 src/Application.cpp
-src/checkUrl.cpp
+src/CheckUrl.cpp
 src/ICommand.h
 src/SetHashParam.cpp
 src/UrLmanager.cpp
