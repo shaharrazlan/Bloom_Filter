@@ -30,10 +30,16 @@ std::string InputOutput::getAction(bool b) {
     if(b) {
         if (iv->isValidNumberAndUrl(inputVec)) {
                 return inputVec[0];
+            } else {
+                return "0";
             }
         }
     else if(iv->isValidInputNumbers(inputVec)) {
         return "3";
-    }
+    } 
+    else {
+                return "0";
+            }
+
 }
  
