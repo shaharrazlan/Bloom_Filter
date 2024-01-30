@@ -15,6 +15,9 @@ std::vector<std::string> InputOutput::getStringElements(std::string inputLine) {
     return result;
 }
 
+ std::vector<std::string>  InputOutput::getData() {
+    return data;
+ }
 
 
 std::string InputOutput::getAction(bool b) {
@@ -33,3 +36,4 @@ std::string InputOutput::getAction(bool b) {
         return "3";
     }
 }
+ 

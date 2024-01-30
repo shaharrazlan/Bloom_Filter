@@ -16,7 +16,7 @@ private:
     std::vector<int> num_hashFunctions;// Added a semicolon here
 
     void setBits(std::string& sizeOfBits);
-    void setNumHashFunctions(std::vector<std::string> num_hashFunctions);
+    void setNumHashFunctions(std::vector<std::string> &num_hashFunctions);
    
 public:
     int getsize();

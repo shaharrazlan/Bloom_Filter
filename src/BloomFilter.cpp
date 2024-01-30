@@ -26,7 +26,7 @@ void BloomFilter::setBits(std::string& sizeOfBits) {
 }
 
 
-void BloomFilter::setNumHashFunctions(std::vector<std::string> num_hashFunctions) {
+void BloomFilter::setNumHashFunctions(std::vector<std::string> &num_hashFunctions) {
     std::set<int> intSet;
     for (int i = 1; i < num_hashFunctions.size(); ++i) {
         intSet.insert(std::stoi(num_hashFunctions[i]));

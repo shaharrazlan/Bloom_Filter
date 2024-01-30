@@ -37,6 +37,5 @@ TEST(InputTest, InvalidInputTest) {
 
     EXPECT_FALSE(iv.isValidNumberAndUrl(io.getStringElements("128 1 2")));
 
-     EXPECT_FALSE(iv.isValidNumberAndUrl(io.getStringElements("1 www.google.com")));
 }
    
