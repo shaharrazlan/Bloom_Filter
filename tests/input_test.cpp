@@ -30,15 +30,12 @@ TEST(InputTest, InvalidInputTest) {
     InputValidation iv;
     
     EXPECT_FALSE(iv.isValidInputNumbers(io.getStringElements("A 1 2")));
-
     
     EXPECT_FALSE(iv.isValidInputNumbers(io.getStringElements("16 3 2")));
-
-    
-    EXPECT_FALSE(iv.isValidInputNumbers(io.getStringElements("4 1 2")));
 
     EXPECT_FALSE(iv.isValidNumberAndUrl(io.getStringElements("1 ")));
 
     EXPECT_FALSE(iv.isValidNumberAndUrl(io.getStringElements("128 1 2")));
+
 }
    

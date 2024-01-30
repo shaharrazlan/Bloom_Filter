@@ -2,6 +2,7 @@
 #define URL_MANAGER_H
 
 #include <iostream>
+#include <fstream>
 #include <unordered_set>
 #include <string>
 

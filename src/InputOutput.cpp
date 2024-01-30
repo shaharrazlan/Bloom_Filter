@@ -15,51 +15,25 @@ std::vector<std::string> InputOutput::getStringElements(std::string inputLine) {
     return result;
 }
 
+ std::vector<std::string>  InputOutput::getData() {
+    return data;
+ }
 
 
-int InputOutput::getInput() {
+std::string InputOutput::getAction(bool b) {
     std::string userInput;
     std::cin.clear();
     std::getline(std::cin, userInput);
     std::vector<std::string> inputVec = getStringElements(userInput);
     this->data = inputVec;
-    InputValidation validInput;
-    
-    if (validInput.isANumber(inputVec)) {
-        if (validInput.isValidInputNumbers(inputVec)) {
-            return 1;
-        } else {
-            return 0;
+   
+    if(b) {
+        if (iv->isValidNumberAndUrl(inputVec)) {
+                return inputVec[0];
+            }
         }
-    } else if (validInput.isValidNumberAndUrl(inputVec)) {
-        return 2;
-    } else {
-       return 0;
+    else if(iv->isValidInputNumbers(inputVec)) {
+        return "3";
     }
 }
-
-std::vector<std::string> InputOutput::getData()
-{
-    return this->data;
-}
-
-std::vector<int> InputOutput::getIntData()
-{
-    std::vector<int> intVec;
-    for (const std::string str : this->data) {
-        intVec.push_back(std::stoi(str));
-    }
-    return intVec;
-}
-    
  
-
-
-void InputOutput::displayOutput(bool isPresent) {
-    if (isPresent) {
-        std::cout << "Element is present in the Bloom Filter." << std::endl;
-    } else {
-        std::cout << "Element is not present in the Bloom Filter." << std::endl;
-    }
-}
-
