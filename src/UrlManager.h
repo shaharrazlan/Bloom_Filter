@@ -6,8 +6,11 @@
 #include <unordered_set>
 #include <string>
 
+// Class definition for UrlManager
 class UrlManager {
 private:
+
+    // Set to store unique URLs
     std::unordered_set<std::string> urlSet;
 
 public:
@@ -21,4 +24,5 @@ public:
     bool checkUrl(std::string url);
 };
 
+// End of header guard
 #endif // URL_MANAGER_H
