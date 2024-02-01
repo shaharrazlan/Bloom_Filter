@@ -14,9 +14,8 @@ To compile, run the following command in your Linux terminal:
 
 To compile and run, use the following command in your Linux terminal:
 
-   ```bash
-   g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp 
-   ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h && ./v1
+```bash
+g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h && ./v1
 
 
 Make sure you have installed g++ compiler.
