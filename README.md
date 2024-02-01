@@ -11,7 +11,6 @@
 
 To compile, run the following command in your Linux terminal:
 
-```bash
 g++ -o v1 \
 ./InputOutput.cpp \
 ./InputValidation.cpp \
