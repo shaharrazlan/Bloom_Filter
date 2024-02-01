@@ -8,7 +8,7 @@ __With download:__
 Download the repository zip file. linke to repo - https://github.com/shaharrazlan/Foobar-Network.git  
 Extract the repository.  
 Open the Linux terminal.  
-Navigate to the repository directory by using the cd command. for example: 
+Navigate to the repository directory by using the cd command. for example:  
 `cd path/to/extracted/repo`  
 Compile the code by running this:  
 `g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h`
