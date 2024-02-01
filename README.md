@@ -7,7 +7,23 @@
    ```bash
    cd path/to/extracted/repo
 
-To compile Run - "g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h"
+🚀 **Compile the Code**
+
+To compile, run the following command in your Linux terminal:
+
+```bash
+g++ -o v1 \
+./InputOutput.cpp \
+./InputValidation.cpp \
+./BloomFilter.cpp \
+./Application.cpp \
+./UrlManager.cpp \
+./main.cpp \
+./CheckUrl.cpp \
+./SetHashParam.cpp \
+./AddUrl.cpp \
+ICommand.h
+
 
 Make sure you have installed g++ compiler.
 
