@@ -5,13 +5,11 @@
 Download the repository zip file. linke to repo - https://github.com/shaharrazlan/Foobar-Network.git  
 Extract the repository.  
 Open the Linux terminal.  
-Navigate to the repository directory, for example:
-```Bash
-cd path/to/extracted/repo
+Navigate to the repository directory, for example:  
+`cd path/to/extracted/repo`
 
-Compile the code by running this:
-```bash
-g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h```
+Compile the code by running this:  
+`g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h`
 
 Make sure you have the g++ compiler installed.
 
