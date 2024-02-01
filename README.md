@@ -1,3 +1,46 @@
+markdown
+Copy code
+# 🚀 How to Compile the Code
+
+1. Download the repository zip locally from [this link](#).
+2. Extract the repository from the downloaded zip file.
+3. Open the Linux terminal.
+4. Navigate to the repository directory using the `cd` command, for example:
+   ```bash
+   cd path/to/extracted/repo
+Compile the Code
+To compile, run the following command in your Linux terminal:
+
+bash
+Copy code
+g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h
+Make sure you have installed the g++ compiler.
+
+How to Run the Code
+After you have compiled, run:
+
+bash
+Copy code
+./v1
+Our Process
+Jira
+
+Used Jira to manage our sprint. Tasks were documented, assigned, and tracked for an organized workflow.
+
+TDD
+
+Worked in a TDD workflow. For every new class, we first created a test, starting from basic to advanced. Tests guided our step-by-step code building.
+
+Docker
+
+Utilized Docker for automatic creation of Dockerized versions for each release, pushing them to a private repository on DockerHub.
+
+Refactoring
+
+Started with a naive code (v1.0.0) and upgraded to v2.0.0. Added branches, interface, command design pattern, and handled edge cases. Finished with cosmetic changes and added this README file.
+
+
+
 # 🚀 How to Compile the Code
 
 1. Download the repository zip locally from [this link](#).
@@ -10,9 +53,8 @@
 **Compile the Code**
 
 To compile, run the following command in your Linux terminal:
-
-```bash
-g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h
+   ```bash
+   g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h
 
 
 
@@ -27,14 +69,6 @@ jira - We used jira to run our sprint. We wrote down tasks that needed to be don
 
 ![Jira](proof/jira.png)
 
-TDD - We worked in a TDD workflow, meaning for every new class we first created a test. This test starts out as a very basic test that we then use to build our code step by step. At first we test for very simple things and according to that we wrote our classes. Then when we wanted to refactor we would re-write the test to be more specific and advanced.
-
-Docker - We used docker so that for every release version of the code it will automatically push a dockerized version to a private repository on DockerHub.
-
-Refactoring - At first we programmed a very naive code which has basic functions that didn't take into account edge cases. This was the first version which we release - v1.0.0.
-After that we upgraded our program, we added branches and used an interface and command design pattern, And we took care of edge cases with our functions. with that we released our second version v2.0.0.
-In the end we added some cosmetic changes and added our README file.
-How to compile our code -
 
 ![Workflow](proof/workflow.png)
 
