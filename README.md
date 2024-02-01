@@ -23,6 +23,7 @@ g++ -o v1 \
 ./SetHashParam.cpp \
 ./AddUrl.cpp \
 ICommand.h
+```bash
 
 
 Make sure you have installed g++ compiler.
