@@ -1,4 +1,11 @@
-g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h
+🚀 **How to Compile the Code**
+
+1. Download the repository zip locally from [this link](https://github.com/shaharrazlan/Foobar-Network.git).
+2. Extract the repository from the downloaded zip file.
+3. Open the Linux terminal.
+4. Navigate to the repository directory using the `cd` command, for example:
+   ```bash
+   cd path/to/extracted/repo
 
 To compile Run - "g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h"
 
