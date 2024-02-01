@@ -12,7 +12,7 @@ How to run the code - After you have compiled Run - "./v1"
 Our proccess -
 jira - We used jira to run our sprint. We wrote down tasks that needed to be done and handed each one out to someone on our team. It helped us work in an organized matter, we always knew who had what task to do, and we could see our progress.
 
-![WhatsApp Image](proof/WhatsApp%20Image%202024-02-01%20at%2017.jpg)
+![Jira](proof/jira.png)
 
 TDD - We worked in a TDD workflow, meaning for every new class we first created a test. This test starts out as a very basic test that we then use to build our code step by step. At first we test for very simple things and according to that we wrote our classes. Then when we wanted to refactor we would re-write the test to be more specific and advanced.
 
@@ -23,7 +23,7 @@ After that we upgraded our program, we added branches and used an interface and 
 In the end we added some cosmetic changes and added our README file.
 How to compile our code -
 
-![Screenshot](proof/Screenshot%202024-02-01%20173410.png)
+![Workflow](proof/workflow.png)
 
 
 
