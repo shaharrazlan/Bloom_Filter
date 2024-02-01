@@ -4,7 +4,7 @@
 
 __Make sure you have the g++ compiler installed.__
 
-__With download:__
+__With download:__  
 Download the repository zip file. linke to repo - https://github.com/shaharrazlan/Foobar-Network.git  
 Extract the repository.  
 Open the Linux terminal.  
