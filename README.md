@@ -1,8 +1,5 @@
-# Foobar-Network
+g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h
 
-How to compile our code - firstly download the repo zip folded locally. Here is the link to the repo - https://github.com/shaharrazlan/Foobar-Network.git
-Extract the repo from the zip file.
-Run the Linux terminal and navigate to the repo directory.
 To compile Run - "g++ -o v1 ./InputOutput.cpp ./InputValidation.cpp ./BloomFilter.cpp ./Application.cpp ./UrlManager.cpp ./main.cpp ./CheckUrl.cpp ./SetHashParam.cpp ./AddUrl.cpp ICommand.h"
 
 Make sure you have installed g++ compiler.
