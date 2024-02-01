@@ -1,28 +1,28 @@
 #include "CheckUrl.h"
 
+// Constructor implementation for CheckUrl
 CheckUrl::CheckUrl() : manager(new UrlManager()) {
-    // Constructor implementation
+    // Create a new instance of UrlManager and assign it to the 'manager' member
 }
 
+// Destructor implementation for CheckUrl
 CheckUrl::~CheckUrl() {
-    delete manager;
-    // Destructor implementation
+    delete manager;  // Deallocate memory for the UrlManager instance
 }
 
+// Implementation of the execute method for CheckUrl
 void CheckUrl::execute(std::vector<std::string> input, BloomFilter* bf) {
-    // Assuming 'bf' is a member of the class or passed as a parameter
-    // Ensure 'bf' is initialized and accessible in this scope
-      if(bf->containsElement(input[1])){
-         std::cout << "true ";
-         if(manager->checkUrl(input[1])) {
-         std::cout << "true" << std::endl;
-         
-                } else {
-        std::cout << "false" << std::endl;
-      }
-       }
-         else {
-        std::cout << "false" << std::endl;
-      }
-        
-  }
+    // Check if the BloomFilter contains the specified URL
+    if (bf->containsElement(input[1])) {
+        std::cout << "true ";  // Output "true" if the BloomFilter contains the URL
+
+        // Check if the UrlManager also confirms the presence of the URL
+        if (manager->checkUrl(input[1])) {
+            std::cout << "true" << std::endl;  // Output "true" if the UrlManager confirms the URL
+        } else {
+            std::cout << "false" << std::endl;  // Output "false" if the UrlManager does not confirm the URL
+        }
+    } else {
+        std::cout << "false" << std::endl;  // Output "false" if the BloomFilter does not contain the URL
+    }
+}
