@@ -23,8 +23,7 @@ Compile the code by running this:
 
 ## How to Run the Code:  
 After compiling, run the executable:  
-```Bash
-./v1
+`./v1`
 
 ## Development Process:
 ### Jira: 🌻:  
