@@ -7,7 +7,7 @@ Extract the repository.
 Open the Linux terminal.  
 Navigate to the repository directory, for example:
 ```Bash
-cd path/to/extracted/repo```
+cd path/to/extracted/repo
 
 Compile the code by running this:
 ```bash
