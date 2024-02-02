@@ -60,10 +60,6 @@ Utilized Jira for sprint management. Tasks were documented, assigned to team mem
 -Built code incrementally based on test results.  
 -Refactored and updated tests as needed.
 
-### Docker: 🌻:  
--Implemented Docker for automatic creation of Dockerized versions for each release.  
--Pushed Dockerized versions to a private repository on DockerHub.
-
 ### Refactoring: 🌻:  
 -Initially released version v1.0.0 with basic functions and no consideration for edge cases.  
 -Upgraded to version v2.0.0, introducing branches, an interface, and a command design pattern. as well as adressing edge cases and refined functions.  
@@ -71,6 +67,11 @@ Utilized Jira for sprint management. Tasks were documented, assigned to team mem
 
 ![Workflow](proof/workflow.png)
 
+### Docker: 🌻:  
+-Implemented Docker for automatic creation of Dockerized versions for each release.  
+-Pushed Dockerized versions to a private repository on DockerHub.
+
+![Image Alt Text](proof/docker.png)
 
 
 
