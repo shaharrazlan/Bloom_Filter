@@ -63,7 +63,7 @@ Utilized Jira for sprint management. Tasks were documented, assigned to team mem
 ### Refactoring: 🌻:  
 -Initially released version v1.0.0 with basic functions and no consideration for edge cases.  
 -Upgraded to version v2.0.0, introducing branches, an interface, and a command design pattern. as well as adressing edge cases and refined functions.  
--Made cosmetic changes and added a README file with version v2.5.0.
+-Made cosmetic changes and added a README file with version v2.0.6 .
 
 ![Workflow](proof/workflow.png)
 
