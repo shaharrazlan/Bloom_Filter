@@ -14,15 +14,15 @@ Compile the code by running this:
 <code>g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h</code>
 
 __With cloning:__  
-# 1. Open your terminal.
+1. Open your terminal.
 
-# 2. Navigate to the directory where you want to clone the repository.
+2. Navigate to the directory where you want to clone the repository:
 cd /path/to/your/desired/directory
 
-# 3. Use git clone with the -b or --branch option to clone the specific version.
+3. Use git clone with the -b or --branch option to clone the specific version:
 git clone -b v2.0.6 https://github.com/shaharrazlan/Foobar-Network.git
 
-# 4. Navigate into the cloned repository.
+4. Navigate into the cloned repository:
 cd Foobar-Network
 
 Compile the code by running this:  
