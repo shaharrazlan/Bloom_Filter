@@ -8,7 +8,7 @@ __With download:__
 
 1. Download the repository zip file. link to repo:  
 
-`https://github.com/shaharrazlan/Foobar-Network/tree/v2.0.6`  
+`https://github.com/shaharrazlan/Foobar-Network/tree/v2.5.0`  
 
 2. Extract the repository.  
 
@@ -32,7 +32,7 @@ __With cloning:__
 
 3. Use git clone with the -b or --branch option to clone the specific version: 
 
-`git clone -b v2.0.6 https://github.com/shaharrazlan/Foobar-Network.git`
+`git clone -b v2.5.0 https://github.com/shaharrazlan/Foobar-Network.git`
 
 4. Navigate into the cloned repository: 
 
@@ -63,7 +63,7 @@ Utilized Jira for sprint management. Tasks were documented, assigned to team mem
 ### Refactoring: 🌻:  
 -Initially released version v1.0.0 with basic functions and no consideration for edge cases.  
 -Upgraded to version v2.0.0, introducing branches, an interface, and a command design pattern. as well as adressing edge cases and refined functions.  
--Made cosmetic changes and added a README file with version v2.0.6 .
+-Made cosmetic changes and added a README file with version v2.5.0 .
 
 ![Workflow](proof/workflow.png)
 
