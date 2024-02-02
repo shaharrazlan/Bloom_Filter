@@ -5,10 +5,10 @@
 __Make sure you have the g++ compiler installed.__
 
 __With download:__  
-Download the repository zip file. link to repo - https://github.com/shaharrazlan/Foobar-Network/tree/v2.0.6  
+Download the repository zip file. link to repo - / `https://github.com/shaharrazlan/Foobar-Network/tree/v2.0.6`  
 Extract the repository.  
 Open the Linux terminal.  
-Navigate to the repository directory by using the cd command. for example:  
+Navigate to the repository directory by using the cd command. for example: /  
 `cd path/to/extracted/repo`  
 Compile the code by running this:  
 <code>g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h</code>
@@ -16,14 +16,14 @@ Compile the code by running this:
 __With cloning:__  
 1. Open your terminal.
 
-2. Navigate to the directory where you want to clone the repository:
-cd /path/to/your/desired/directory
+2. Navigate to the directory where you want to clone the repository: /
+`cd /path/to/your/desired/directory`
 
-3. Use git clone with the -b or --branch option to clone the specific version:
+3. Use git clone with the -b or --branch option to clone the specific version: /
 `git clone -b v2.0.6 https://github.com/shaharrazlan/Foobar-Network.git`
 
-4. Navigate into the cloned repository:
-cd Foobar-Network
+4. Navigate into the cloned repository: /
+`cd Foobar-Network`
 
 Compile the code by running this:  
 `g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h`
