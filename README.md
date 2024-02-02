@@ -2,13 +2,14 @@
 
 ## How to Compile the Code:
 
+
 __Make sure you have the g++ compiler installed.__
 
 __With download:__  
 
 1. Download the repository zip file. link to repo:  
 
-`https://github.com/shaharrazlan/Foobar-Network/tree/v2.5.0`  
+`https://github.com/shaharrazlan/Foobar-Network.git`  
 
 2. Extract the repository.  
 
@@ -24,29 +25,23 @@ __With download:__
 
 __With cloning:__  
 
-1. Open your terminal.
+1. Open your Vs code and connect to you github user.
 
-2. Navigate to the directory where you want to clone the repository:   
+2. Clone the the repo from:
 
-`cd /path/to/your/desired/directory`
+    `https://github.com/shaharrazlan/Foobar-Network.git`
 
-3. Use git clone with the -b or --branch option to clone the specific version: 
-
-`git clone -b v2.5.0 https://github.com/shaharrazlan/Foobar-Network.git`
-
-4. Navigate into the cloned repository: 
-
-`cd Foobar-Network`
-
-5. Compile the code by running this:  
+3. Compile the code by running this:  
 
 `g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h`
+
 
 ## How to Run the Code:  
 
 After compiling, run the executable:  
 
 `./v1`
+
 
 ## Development Process:
 ### Jira: 🌻:  
