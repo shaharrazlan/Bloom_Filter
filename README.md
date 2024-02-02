@@ -20,7 +20,7 @@ __With cloning:__
 cd /path/to/your/desired/directory
 
 3. Use git clone with the -b or --branch option to clone the specific version:
-git clone -b v2.0.6 https://github.com/shaharrazlan/Foobar-Network.git
+`git clone -b v2.0.6 https://github.com/shaharrazlan/Foobar-Network.git`
 
 4. Navigate into the cloned repository:
 cd Foobar-Network
