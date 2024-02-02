@@ -6,19 +6,24 @@ __Make sure you have the g++ compiler installed.__
 
 __With download:__  
 
-Download the repository zip file. link to repo -  `https://github.com/shaharrazlan/Foobar-Network/tree/v2.0.6`  
+1. Download the repository zip file. link to repo:  
 
-Extract the repository.  
+`https://github.com/shaharrazlan/Foobar-Network/tree/v2.0.6`  
 
-Open the Linux terminal.  
+2. Extract the repository.  
 
-Navigate to the repository directory by using the cd command. for example:    
+3. Open the Linux terminal.  
+
+4. Navigate to the repository directory by using the cd command. for example:    
+
 `cd path/to/extracted/repo`  
 
-Compile the code by running this:  
+5. Compile the code by running this:  
+
 <code>g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h</code>
 
 __With cloning:__  
+
 1. Open your terminal.
 
 2. Navigate to the directory where you want to clone the repository:   
@@ -33,7 +38,7 @@ __With cloning:__
 
 `cd Foobar-Network`
 
-Compile the code by running this:  
+5. Compile the code by running this:  
 
 `g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h`
 
