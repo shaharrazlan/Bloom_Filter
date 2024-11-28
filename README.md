@@ -1,73 +1,123 @@
-# Foobar-Network Repo :rocket:
+# 🌟 Bloom Filter Implementation with TDD & Docker and CI/CD 🚀
 
-## How to Compile the Code:
+Welcome to the **Bloom Filter Project**! This repository showcases a robust implementation of a URL filtering system using **C++**, **Test-Driven Development (TDD)**, and **Docker** for streamlined deployment. 🛡️✨
 
+---
 
-__Make sure you have the g++ compiler installed.__
+## 📚 Table of Contents
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Technologies & Tools](#-technologies--tools)
+- [Setup Instructions](#-setup-instructions)
+- [Usage](#-usage)
+- [How It Works](#-how-it-works)
+- [Future Improvements](#-future-improvements)
+- [License](#-license)
 
-__With download:__  
+---
 
-1. Download the repository zip file. link to repo:  
+## 🔍 About the Project
 
-`https://github.com/shaharrazlan/Foobar-Network.git`  
+The **Bloom Filter** is a probabilistic data structure designed for efficient memory usage, enabling fast membership checks for URLs. This project was built to:
+- Protect users from blacklisted websites. 🛑
+- Demonstrate **Red-Green-Refactor** methodology in TDD. ✅
+- Showcase deployment via **DockerHub**. 🐳
 
-2. Extract the repository.  
+---
 
-3. Open the Linux terminal.  
+## 🌟 Features
 
-4. Navigate to the repository directory by using the cd command. for example:    
+- **Memory-Efficient Filtering**: Leveraging Bloom filters to minimize storage needs.
+- **False-Positive Handling**: Secondary checks against the actual blacklist. 🔍
+- **Modular Design**: Easily extendable with additional hash functions or configurations.
+- **Automated Testing**: Implemented with Google Test for reliable performance. 📊
+- **Dockerized Deployment**: Runs seamlessly across environments. ⚙️
 
-`cd path/to/extracted/repo`  
+---
 
-5. Compile the code by running this:  
+## 🛠️ Technologies & Tools
 
-<code>g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h</code>
+- **Programming Language**: C++ 🖥️
+- **Testing Framework**: Google Test 🧪
+- **Build System**: CMake 🛠️
+- **Containerization**: Docker 🐳
+- **Version Control**: GitHub 🗂️
+- **CI/CD Integration**: GitHub Actions 🤖
 
-__With cloning:__  
+---
 
-1. Open your Vs code and connect to you github user.
+## ⚙️ Setup Instructions
 
-2. Clone the the repo from:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/bloom-filter.git
+   cd bloom-filter
+   ```
 
-    `https://github.com/shaharrazlan/Foobar-Network.git`
+2. Install dependencies:
+   ```bash
+   sudo apt-get update
+   sudo apt-get install libgtest-dev cmake
+   ```
 
-3. Compile the code by running this:  
+3. Build the project:
+   ```bash
+   cmake -B build -S .
+   cmake --build build
+   ```
 
-`g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h`
+4. Run tests:
+   ```bash
+   ctest --test-dir build --output-on-failure
+   ```
 
+5. Deploy with Docker:
+   ```bash
+   docker build -t bloom-filter .
+   docker run bloom-filter
+   ```
 
-## How to Run the Code:  
+---
 
-After compiling, run the executable:  
+## 🚀 Usage
 
-`./v1`
+### **Adding URLs to the Filter**
+Use the input format `1 [URL]` to add a URL to the blacklist:
+```bash
+1 www.example.com
+```
 
+### **Checking URLs**
+Use the input format `2 [URL]` to verify if a URL is blacklisted:
+```bash
+2 www.example.com
+```
 
-## Development Process:
-### Jira: 🌻:  
-Utilized Jira for sprint management. Tasks were documented, assigned to team members, and tracked for organized workflow.
+---
 
-![Jira](proof/jira.png)
+## 🧩 How It Works
 
-### Test-Driven Development (TDD): 🌻:  
--Followed a TDD workflow for creating new classes.  
--Wrote initial basic tests for each class.  
--Built code incrementally based on test results.  
--Refactored and updated tests as needed.
+1. **Hash Functions**: URLs are hashed using multiple hash functions to determine bit positions.
+2. **Bit Array**: These positions in a fixed-size bit array are set to `1` for added URLs.
+3. **False Positives**: Bloom filters may classify a URL as blacklisted erroneously but never fail to identify a genuinely blacklisted URL.
 
-### Refactoring: 🌻:  
--Initially released version v1.0.0 with basic functions and no consideration for edge cases.  
--Upgraded to version v2.0.0, introducing branches, an interface, and a command design pattern. as well as adressing edge cases and refined functions.  
--Made cosmetic changes and added a README file with version v2.5.0 .
+---
 
-![Workflow](proof/workflow.png)
+## 🔮 Future Improvements
 
-### Docker: 🌻:  
--Implemented Docker for automatic creation of Dockerized versions for each release.  
--Pushed Dockerized versions to a private repository on DockerHub.
+- Expand support for additional hash functions. 🛠️
+- Optimize performance for large datasets. ⚡
+- Improve false-positive handling through configurable bit array sizes.
 
-![Image Alt Text](proof/docker.png)
+---
 
+## 📜 License
 
+This project is licensed under the [MIT License](LICENSE).
 
+---
 
+Feel free to contribute, report issues, or reach out for collaboration opportunities! 🌟
+```
+
+Let me know if you'd like any section customized further! 😊
