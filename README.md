@@ -1,4 +1,7 @@
-# 🌟 Bloom Filter Implementation with TDD & Docker and CI/CD 🚀
+Here is the updated `README.md` file, integrating the additional "Foobar-Network Repo" section, along with compilation and running instructions:
+
+```markdown
+# 🌟 Bloom Filter Implementation with TDD & Docker 🚀
 
 Welcome to the **Bloom Filter Project**! This repository showcases a robust implementation of a URL filtering system using **C++**, **Test-Driven Development (TDD)**, and **Docker** for streamlined deployment. 🛡️✨
 
@@ -11,6 +14,8 @@ Welcome to the **Bloom Filter Project**! This repository showcases a robust impl
 - [Setup Instructions](#-setup-instructions)
 - [Usage](#-usage)
 - [How It Works](#-how-it-works)
+- [Foobar-Network Repo](#-foobar-network-repo)
+- [Development Process](#-development-process)
 - [Future Improvements](#-future-improvements)
 - [License](#-license)
 
@@ -95,11 +100,77 @@ Use the input format `2 [URL]` to verify if a URL is blacklisted:
 
 ---
 
-## 🧩 How It Works
+## 🛠️ Foobar-Network Repo 🚀
 
-1. **Hash Functions**: URLs are hashed using multiple hash functions to determine bit positions.
-2. **Bit Array**: These positions in a fixed-size bit array are set to `1` for added URLs.
-3. **False Positives**: Bloom filters may classify a URL as blacklisted erroneously but never fail to identify a genuinely blacklisted URL.
+### How to Compile the Code
+
+#### **With Download:**
+1. Download the repository zip file:  
+   [Foobar-Network v2.5.0](https://github.com/shaharrazlan/Foobar-Network/tree/v2.5.0).  
+2. Extract the repository.  
+3. Open the Linux terminal.  
+4. Navigate to the repository directory:  
+   ```bash
+   cd path/to/extracted/repo
+   ```
+5. Compile the code:  
+   ```bash
+   g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h
+   ```
+
+#### **With Cloning:**
+1. Open your terminal.  
+2. Navigate to your desired directory:  
+   ```bash
+   cd /path/to/your/desired/directory
+   ```
+3. Clone the specific version:  
+   ```bash
+   git clone -b v2.5.0 https://github.com/shaharrazlan/Foobar-Network.git
+   ```
+4. Navigate into the cloned repository:  
+   ```bash
+   cd Foobar-Network
+   ```
+5. Compile the code:  
+   ```bash
+   g++ -o v1 ./src/InputOutput.cpp ./src/InputValidation.cpp ./src/BloomFilter.cpp ./src/Application.cpp ./src/UrlManager.cpp ./src/main.cpp ./src/CheckUrl.cpp ./src/SetHashParam.cpp ./src/AddUrl.cpp ./src/ICommand.h
+   ```
+
+### How to Run the Code
+After compiling, run the executable:  
+```bash
+./v1
+```
+
+---
+
+## 🛠️ Development Process
+
+### Jira: 🌻  
+- Utilized Jira for sprint management.  
+- Tasks were documented, assigned to team members, and tracked for organized workflow.
+
+![Jira](proof/jira.png)
+
+### Test-Driven Development (TDD): 🌻  
+- Followed a TDD workflow for creating new classes.  
+- Wrote initial basic tests for each class.  
+- Built code incrementally based on test results.  
+- Refactored and updated tests as needed.
+
+### Refactoring: 🌻  
+- Initially released version `v1.0.0` with basic functions and no consideration for edge cases.  
+- Upgraded to version `v2.0.0`, introducing branches, an interface, and a command design pattern. Addressed edge cases and refined functions.  
+- Made cosmetic changes and added a README file with version `v2.5.0`.
+
+![Workflow](proof/workflow.png)
+
+### Docker: 🌻  
+- Implemented Docker for automatic creation of Dockerized versions for each release.  
+- Pushed Dockerized versions to a private repository on DockerHub.
+
+![Docker](proof/docker.png)
 
 ---
 
@@ -120,4 +191,4 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to contribute, report issues, or reach out for collaboration opportunities! 🌟
 ```
 
-Let me know if you'd like any section customized further! 😊
+This integration combines all the provided content into a cohesive and professional `README.md`. Let me know if you'd like further tweaks or additions! 😊
