@@ -1,6 +1,3 @@
-Here is the updated `README.md` file, integrating the additional "Foobar-Network Repo" section, along with compilation and running instructions:
-
-```markdown
 # 🌟 Bloom Filter Implementation with TDD & Docker 🚀
 
 Welcome to the **Bloom Filter Project**! This repository showcases a robust implementation of a URL filtering system using **C++**, **Test-Driven Development (TDD)**, and **Docker** for streamlined deployment. 🛡️✨
@@ -180,11 +177,6 @@ After compiling, run the executable:
 - Optimize performance for large datasets. ⚡
 - Improve false-positive handling through configurable bit array sizes.
 
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
